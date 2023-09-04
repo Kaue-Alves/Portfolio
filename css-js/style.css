@@ -1,0 +1,286 @@
+html, body {
+    width: 100%; height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+#inicio {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+}
+
+#enfeite1 {
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%, 0% 100%);
+}
+
+.pent {
+    margin: auto;
+    background-color: rgb(20, 20, 20);
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(0% 50%, 50% 100%, 100% 50%, 50% 0%);
+}
+
+#enfeite2 {
+    background-color: white;
+    width: 30%;
+    height: 100%;
+    clip-path: polygon(0% 50%, 30% 0%, 100% 0%, 100% 100%, 30% 100%);
+}
+
+#centro {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#circle {
+    background-color: white;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#nome {
+    margin: none;
+    font-family: monospace;
+    border-right: 4px solid white;
+    color: white;
+    width: 13ch;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 18pt;
+    animation: typing 1.5s steps(13), blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#meio {
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px 30px 0 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 350px;
+}
+
+#contato {
+    width: 40%;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    clip-path: polygon(0% 0%, 70% 0%, 100% 30%, 100% 100%, 0% 100% );
+}
+
+#ncontato {
+    margin-left: 20px;
+    font-family: monospace;
+    font-size: 20pt;
+    color: white;
+}
+
+#contato img {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    filter: invert();
+}
+
+span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.links:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+#sobrem {
+    width: 40%;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+p {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#fim {
+    margin: auto;
+    border-radius: 0 0 30px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    width: 90%;
+    height: 150px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+#titulo > h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 40%; height: 70px;
+    font-family: monospace;
+    font-size: 24pt;
+    text-align: center;
+    border: 1px solid white;
+    border-top-color: white;
+    border-left-style: hidden;
+    border-right-style: hidden;
+
+}
+
+#projetos {
+    display: flex;
+    justify-content: space-around;
+    width: 90%; height: 300px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 0px 0px 30px 30px;
+}
+
+.caixap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 30%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+h2 {
+    color: white;
+    font-family: monospace;
+
+}
+
+.caixap img {
+    filter: invert();
+    width: 100px; height: 100px; 
+}
+
+#cxcalendario, #cxcalendario img {
+    transition: 0.3s;
+}
+
+#cxcalendario:hover {
+    background-color: rgb(241, 241, 24);
+}
+
+#cxcalendario:hover h2 {
+    color: black;
+}
+
+#cxcalendario:hover img {
+    filter: none;
+}
+
+#cxcurriculo, #cxcurriculo img {
+    transition: 0.3s;
+}
+
+#cxcurriculo:hover {
+    background-color: rgb(111, 170, 194);
+}
+
+#cxcurriculo:hover h2 {
+    color: black;
+}
+
+#cxcurriculo:hover img {
+    filter: none;
+}
+
+#cxaviao, #cxaviao img {
+    transition: 0.3s;
+}
+
+#cxaviao:hover {
+    background-color: rgb(107, 33, 175);
+}
+
+#cxaviao:hover h2 {
+    color: black;
+}
+
+#cxaviao:hover img {
+    filter: none;
+}
+
+footer {
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+}
+
+h3 {
+    color: white;
+    font-family: monospace;
+    text-align: end;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
